@@ -1,5 +1,7 @@
+# a program to convert 12 hour system into 24 hour clock system
+# the input is expected to be a date string format
+# s = '11:05:45am'
 def time_convert(s):
-
     if s[-2:].upper() == 'PM':
         int_val = int(s[:2]) + 12
         if int_val >= 24:
